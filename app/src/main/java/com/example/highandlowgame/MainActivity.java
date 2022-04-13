@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             EditText editTextNumber = (EditText) findViewById(R.id.editTextNumber);
             int GuessedNumber = Integer.parseInt(editTextNumber.getText().toString());
             if (GuessedNumber < 1 || GuessedNumber > 100)
-                message = "Input a number between 1-20!";
+                message = "Input a number between 1-100!";
             else if (GuessedNumber < randomNumber)
                 message = "Higher !!";
             else if (GuessedNumber > randomNumber)
